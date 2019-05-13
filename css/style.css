@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/fondo1.jpg);
+}
+
+.container{
+    background-color: rgba(199, 204, 204, 0.582);
+    width: 90%;
+    margin: 0 auto;
+    height: 35rem;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 1rem;
+}
+
+.parrafos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: 40px;
+    overflow: hidden;
+    width: 80%;
+    background: rgba(250, 168, 44, 0.877);
+}
+ul{
+    height: 28px;
+    list-style: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    animation: cambiar 10s infinite;
+
+}
+
+@keyframes cambiar{
+    0%{margin-top: 0;}
+    25%{margin-top: 0;}
+    50%{margin-top: -69px;}
+    75%{margin-top:-69px;}
+    100%{margin-top: 0;}
+
+}
+
+
+
+.container-hamburguesa{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80%;
+    height: 400px;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#pan_arriba{
+    display: none;
+    background-color:#f8ba52;
+    width: 30%;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px 100px 0px 0px;
+}
+#queso{
+    display: none;
+    background-color:#fcf811;
+    width: 30%;
+    height: 10px;
+    margin: 0 auto;
+}
+#carne{
+    display: none;
+    background-color:#953627;
+    width: 32%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 100px 100px 100px 100px;
+}
+#lechuga{
+    display: none;
+    background-color:#14ff0b;
+    width: 30%;
+    height: 15px;
+    margin: 0 auto;
+    
+}
+#tomate{
+    display: none ;
+    background-color:#ff0707;
+    width: 30%;
+    height: 20px;
+    margin: 0 auto;
+    
+}
+
+#pan_abajo{
+    display: none;
+    background-color:#f8ba52;
+    width: 30%;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 0px 0px 100px 100px;
+}
+
+.botones{
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 75%;
+    
+}
+
+.botones button{
+    width: 25%;
+    height: 2rem;
+    cursor: pointer;
+    background-color: rgba(235, 161, 77, 0.911);
+    color: #ffffff;
+    font-size: 20px;
+    border: none;    
+    border-radius: 6px;
+    margin: 6px 6px 6px 6px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+button:hover{
+    background-color:#ffffff;
+    color:rgb(214, 111, 38);
+    -webkit-transform: scale(1.1);
+    -webkit-transition: 1s;
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
